@@ -30,5 +30,5 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   },
-  "proxy": "http://lllomh.cn/myblogs"
+  "proxy": "http://lllomh.cn"
 }

@@ -5,10 +5,12 @@ let http = {
     post:'',
     get:''
 };
-const baseurl = process.env.NODE_ENV === 'production' ? 'http://lllomh.cn' : '/';
+const baseurl = '';
+// const baseurl = process.env.NODE_ENV === 'production' ? 'http://lllomh.cn' : '/';
 http.post = function (api,data) {
     let params = qs.stringify(data);
     return new Promise((resolve, reject) => {
+        console.log(baseurl+api,'wewewe')
             axios.post(baseurl+api, params).then((res)=>{
                 resolve(res)
             })
