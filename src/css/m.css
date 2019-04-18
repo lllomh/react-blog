@@ -1,0 +1,35 @@
+@charset "utf-8";
+@media only screen and (max-width: 769px) {
+#mnav, article { width: 96%; overflow: hidden }
+#mnavh { display: block; z-index: 99; position: fixed; right: 0; top: 16px; }
+header { width: 100%; }
+nav { position: fixed; margin: 0; display: none; z-index: 9; height: auto; top: 0; right: 0; width: 100%; padding: 30px 0; background: rgb(255, 255, 255, .9) }
+.topnav a { margin: 5px 0; padding: 0; width: 100%; text-align: center; }
+.topnav a:last-child { padding-bottom: 100% }
+.box { width: 100% }
+.avatar { display: none }
+.bloglist { width: 100%; background: none }
+.bloglist ul { width: 96%; margin:5px auto }
+.bloglist figure { width: 100% }
+.bloglist figure img { width: 96% }
+aside { width: 100%; margin-top: 30px }
+.weather { display: none }
+.weixin { background-postion: center }
+footer,.newblog{ width: 100% }
+h1.t_nav span{ display:none}
+.newblog{ background:none}
+.nlist{ width:98%} 
+.newblog figure{ width:100%}
+.newblog figure img{ width:96%}
+.ad{ display:none}
+.rnav{ width:100%}
+.rnav li{width: 48%;}
+.about{ width:98%; background: none }
+.about ul{ width:100%}
+.caselist{ width:100%; background:none}
+.index_about{ width:100%; background:none}
+ul.infos{ margin:20px 0}
+.box_c{ margin-right:0}
+.nextinfo{ margin-top:20px}
+ul.infos p img{ max-width:100% !important}
+}
