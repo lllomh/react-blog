@@ -17,23 +17,24 @@ class Home extends React.Component {
         super(props);
         this.state={
             timer:'1111',
-            datas:[]
+            datas:[],
+            wedter:{}
         }
         this.list= [];
     }
     async getList (){
-        // await http.get('/api/returndata.php').then((res)=>{
-        //     console.log(res,23232323232132132333)
-        // })
         let res = await http.post('/api/returndata.php');
         let resdtae = res.data.data;
         this.setState({ datas: resdtae })
-
+    }
+    async getWeateer(){
+        let res =  await  http.post('/api/returnwadtherdata.php');
+        this.setState({wedter:res.data.result['sk']})
     }
      async componentDidMount(){
          await this.getList()
-         console.log(this.state.datas);
-
+         await this.getWeateer()
+         console.log(this.state.wedter)
     }
 
     render() {
@@ -85,7 +86,8 @@ class Home extends React.Component {
                     </div>
                     <aside className="right">
                         <div className="weather">
-
+                            <span>苏州</span><br/><br/>
+                            <span>风向：{this.state.wedter['wind_direction']}</span>
                         </div>
                         <div className="news">
                             <h3>
