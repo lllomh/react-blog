@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter  , Route, Switch , Link} from 'react-router-dom';
 import http from '../../api/server'
 
 import one from '../../images/01.jpg';
@@ -21,6 +22,7 @@ class Home extends React.Component {
             wedter:{}
         }
         this.list= [];
+
     }
     async getList (){
         let res = await http.post('/api/returndata.php');
@@ -76,8 +78,7 @@ class Home extends React.Component {
                                     <h3>{list.title}</h3>
                                     <figure><img alt="" src={fowe001}/></figure>
                                     <ul>
-                                        <p>{list.content}</p>
-                                        <a title="/" href="/" target="_blank" className="readmore">阅读全文>></a>
+                                        <Link target="_blank" className="readmore" to={`/detail/${list.title}`}>阅读全文</Link>
                                     </ul>
                                     <p className="dateview"><span>{list.time}</span><span>作者：{list.author}</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
                                 </div>
