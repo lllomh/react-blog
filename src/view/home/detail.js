@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+require('./new.css');
 class Detail extends React.Component {
     componentDidMount() {
         var data = this.props.location.state;
