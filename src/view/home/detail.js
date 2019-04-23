@@ -54,13 +54,10 @@ class Detail extends React.Component {
                             <h2>相关文章</h2>
                             <ul>
                                 <li><a href="/news/s/2013-07-25/524.html" title="现在，我相信爱情！">现在，我相信爱情！</a></li>
-                                <li><a href="/newstalk/mood/2013-07-24/518.html" title="我希望我的爱情是这样的">我希望我的爱情是这样的</a>
-                                </li>
-                                <li><a href="/newstalk/mood/2013-07-02/335.html"
-                                       title="有种情谊，不是爱情，也算不得友情">有种情谊，不是爱情，也算不得友情</a></li>
+                                <li><a href="/newstalk/mood/2013-07-24/518.html" title="我希望我的爱情是这样的">我希望我的爱情是这样的</a></li>
+                                <li><a href="/newstalk/mood/2013-07-02/335.html" title="有种情谊，不是爱情，也算不得友情">有种情谊，不是爱情，也算不得友情</a></li>
                                 <li><a href="/newstalk/mood/2013-07-01/329.html" title="世上最美好的爱情">世上最美好的爱情</a></li>
-                                <li><a href="/news/read/2013-06-11/213.html" title="爱情没有永远，地老天荒也走不完">爱情没有永远，地老天荒也走不完</a>
-                                </li>
+                                <li><a href="/news/read/2013-06-11/213.html" title="爱情没有永远，地老天荒也走不完">爱情没有永远，地老天荒也走不完</a></li>
                                 <li><a href="/news/s/2013-06-06/24.html" title="爱情的背叛者">爱情的背叛者</a></li>
                             </ul>
                         </div>
@@ -73,8 +70,7 @@ class Detail extends React.Component {
                             </h3>
                             <ul className="rank">
                                 <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                                <li><a href="/" title="with love for you 个人网站模板" target="_blank">with love for you
-                                    个人网站模板</a></li>
+                                <li><a href="/" title="with love for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
                                 <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
                                 <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
                                 <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
@@ -87,8 +83,7 @@ class Detail extends React.Component {
                             </h3>
                             <ul className="paih">
                                 <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                                <li><a href="/" title="withlove for you 个人网站模板" target="_blank">with love for you
-                                    个人网站模板</a></li>
+                                <li><a href="/" title="withlove for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
                                 <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
                                 <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
                                 <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
