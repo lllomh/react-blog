@@ -78,7 +78,7 @@ class Home extends React.Component {
                                     <h3>{list.title}</h3>
                                     <figure><img alt="" src={fowe001}/></figure>
                                     <ul>
-                                        <Link target="_blank" className="readmore" to={`/detail/${list.title}`}>阅读全文</Link>
+                                        <Link target="_blank" className="readmore" to={`/detail/${list.title}`}>阅读全文>></Link>
                                     </ul>
                                     <p className="dateview"><span>{list.time}</span><span>作者：{list.author}</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
                                 </div>

@@ -9,6 +9,7 @@ require('./new.css');
 class Detail extends React.Component {
     constructor(props){
         super(props);
+        console.log("参数:"+props);
         this.state= {
             data: ""
         };
