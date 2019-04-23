@@ -2,8 +2,6 @@ import React from 'react';
 
 import one from '../../images/e5e39b1148811261c78b933805d07232.png';
 import two from '../../images/1f8aea2172f6eb987c3de3f7ba474eb1.png';
-import thee from '../../images/03.jpg'
-import fowe from '../../images/04.jpg'
 
 
 
@@ -25,7 +23,7 @@ class Detail extends React.Component {
         return (
             <div className={'detaCentont'}>
                 <article className="blogs">
-                    <h1 className="t_nav"><span>您当前的位置：<a href="/index.html">首页</a>&nbsp;&gt;&nbsp;<a
+                    <h1 className="t_nav"><span>您当前的位置：<a href="/">首页</a>&nbsp;&gt;&nbsp;<a
                         href="/news/s/">慢生活</a>&nbsp;&gt;&nbsp;<a href="/news/s/">日记</a></span><a href="/" className="n1">网站首页</a><a href="/" className="n2">日记</a></h1>
                     <div className="index_about">
                         <h2 className="c_titile">{this.state.data.title}</h2>
