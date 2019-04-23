@@ -1,11 +1,25 @@
 import React from 'react';
 
+import one from '../../images/e5e39b1148811261c78b933805d07232.png';
+import two from '../../images/1f8aea2172f6eb987c3de3f7ba474eb1.png';
+import thee from '../../images/03.jpg'
+import fowe from '../../images/04.jpg'
+
+
+
 require('./new.css');
 class Detail extends React.Component {
-    componentDidMount() {
-        var data = this.props.location.state;
+    constructor(props){
+        super(props);
+        this.state= {
+            data: ""
+        };
 
-         console.log(this.props.location,'1212')
+    }
+    async componentDidMount() {
+       await this.setState({data:this.props.match.params});
+
+         console.log( this.state.data,'1212')
     }
     render() {
         return (
@@ -14,18 +28,18 @@ class Detail extends React.Component {
                     <h1 className="t_nav"><span>您当前的位置：<a href="/index.html">首页</a>&nbsp;&gt;&nbsp;<a
                         href="/news/s/">慢生活</a>&nbsp;&gt;&nbsp;<a href="/news/s/">日记</a></span><a href="/" className="n1">网站首页</a><a href="/" className="n2">日记</a></h1>
                     <div className="index_about">
-                        <h2 className="c_titile">爱情不容有错，即使错了那就重来</h2>
+                        <h2 className="c_titile">{this.state.data.title}</h2>
                         <p className="box_c"><span className="d_time">发布时间：2013-09-08</span><span>编辑：杨青</span><span>互动QQ群：<a
                             href="http://wp.qq.com/wpa/qunwpa?idkey=d4d4a26952d46d564ee5bf7782743a70d5a8c405f4f9a33a60b0eec380743c64">280998807</a></span>
                         </p>
                         <ul className="infos">
                             <p>进一好友空间，再一次看到她置顶的那一篇《他和她的故事》爱情在他俩的生活中经历了不少分分合合，但最后俩人还是走在了一起。当今天再一次阅读的时候，我没有第一次那么感性，我注重他们俩曲折的过程，其中出现过第三者...</p>
                             <p>如果我是她，对于他当初的脚踏两只船、尽管仍然说爱但亦然离开而选择别人，我很肯定我是无法原谅他的，也许你会说是因为我不是真正爱他吧，我也不知道，这是不是因为爱得不够深，不能包容他的过错...我是很小气的人，就像很多人说的那样，一年365天，你364天对她好，只要有一天对她不好，她也会在n天也许n年后提出来，你哪天对我不好。</p>
-                            <p><img src="../../images/e5e39b1148811261c78b933805d07232.png" alt="分手"/></p>
+                            <p><img src={one} alt="分手"/></p>
                             <p>大学时跟我分分合合的男朋友，却是这么一个爱犯错的人。跟他交往，会有意无意的伤到我自尊，至今我也那么认为那伤害了我的自尊。在我骨子里有一种骄傲和很强的自尊，而他却偏偏伤了一次又一次。他的朋友都说我小气，我至今也觉得如果我不小气，那就是我傻！</p>
                             <p>我认为大学时的恋爱，是毕业前进入社会的一次恋爱实习。参杂了很多的疑问和抉择。就像工作，从销售到文员到编辑到技术员，最后才知道什么工作适合自己。找一个人陪你恋爱实习，也许很简单，也许很难。</p>
                             <p>这么多年过去了，当初分手都会舍不得那段4年的感情，后来也是时间煮了这段记忆。现在我们各自有了各自的生活，他也找到了他心仪的女孩，我能感觉出他们俩很相爱，当初最后一次分手的过渡时间，无论有多么的不舍与难熬，现在看看都是正确的。</p>
-                            <p><img src="../../images/1f8aea2172f6eb987c3de3f7ba474eb1.png" alt="分手"/></p>
+                            <p><img src={two} alt="分手"/></p>
                             <p>为何我会毅然放弃，因为在我心里，那些过去的伤，那些不好的记忆永远都抹不去，我无法面对，哪怕是当初妥协了，我想最后我也一定会再一次选择放弃....</p>
                             <p>我觉得爱情也可以重新来过，只是换换主角罢了...</p>
                         </ul>
