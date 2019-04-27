@@ -1,0 +1,1 @@
+const P_ARTICLE_LIST = ''

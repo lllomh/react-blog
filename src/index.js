@@ -4,6 +4,8 @@ import Router from './router';
 import * as serviceWorker from './serviceWorker';
 import Header from './components/header';
 import Footer from './components/footer';
+import https from './api/server';
+window.http = https;
 require('./css/base.css');
 require('./css/m.css');
 ReactDOM.render(

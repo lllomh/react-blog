@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import http from '../../api/server'
+
 
 import one from '../../images/01.jpg';
 import two from '../../images/02.jpg';
@@ -25,13 +25,13 @@ class Home extends React.Component {
 
     }
     async getList (){
-        let res = await http.post('/api/returndata.php');
+        let res = await window.http.post('/frontapi/article_list');
         let resdtae = res.data.data;
         this.setState({ datas: resdtae })
     }
     async getWeateer(){
-        let res =  await  http.post('/api/returnwadtherdata.php');
-        this.setState({wedter:res.data.result['sk']})
+        // let res =  await  http.post('/api/returnwadtherdata.php');
+        // this.setState({wedter:res.data.result['sk']})
     }
      async componentDidMount(){
          await this.getList()
@@ -88,7 +88,7 @@ class Home extends React.Component {
                     <aside className="right">
                         <div className="weather">
                             <span>苏州</span><br/><br/>
-                            <span>风向：{this.state.wedter['wind_direction']}</span>
+                            {/*<span>风向：{this.state.wedter['wind_direction']}</span>*/}
                         </div>
                         <div className="news">
                             <h3>
