@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c6b5e0-9bec-4c0b-a66b-5c35fdeb2cc1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/home/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/home/detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/home/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="d2c6b5e0-9bec-4c0b-a66b-5c35fdeb2cc1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -28,6 +21,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -56,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/home/detail.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -284,15 +286,16 @@
       <workItem from="1555983988534" duration="18466000" />
       <workItem from="1556244284477" duration="2711000" />
       <workItem from="1556268185916" duration="5000" />
-      <workItem from="1556330301618" duration="18992000" />
+      <workItem from="1556330301618" duration="20321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112017000" />
+    <option name="totallyTimeSpent" value="113346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09272919" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -421,13 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/_city.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36990">
@@ -544,6 +540,13 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
         </state>
       </provider>
     </entry>
