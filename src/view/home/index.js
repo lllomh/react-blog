@@ -77,10 +77,10 @@ class Home extends React.Component {
                                     <h3>{list.title}</h3>
                                     <figure><img alt="" src={fowe001}/></figure>
                                     <ul>
-                                        <Link target="_blank" className="readmore" to={`/detail/${list.id}`}>阅读全文>></Link>
+                                        <Link className="readmore" to={`/detail/${list.id}`}>阅读全文>></Link>
                                         <p dangerouslySetInnerHTML = {{ __html:list.smalltext }}></p>
                                     </ul>
-                                    <p className="dateview"><span>{filterTime(list.newstime)}</span><span>作者：{list.author}</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
+                                    <p className="dateview"><span>{filterTime(list.newstime)}</span><span>作者：{list.username}</span><span>个人博客：[<a href="#">{list.classname}</a>]</span></p>
                                 </div>
                             )
                         })}

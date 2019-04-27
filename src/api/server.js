@@ -10,7 +10,6 @@ const baseurl = '';
 http.post = function (api,data) {
     let params = qs.stringify(data);
     return new Promise((resolve, reject) => {
-        console.log(baseurl+api,'wewewe')
             axios.post(baseurl+api, params).then((res)=>{
                 resolve(res)
             })

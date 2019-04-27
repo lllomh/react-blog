@@ -8,8 +8,8 @@ import Detail from './view/home/detail';
 const BasicRoute = () => (
     <BrowserRouter >
         <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/detail/:title" component={Detail}/>
+            <Route exact path="/"  component={Home}/>
+            <Route exact path="/detail/:id" component={Detail}/>
         </Switch>
     </BrowserRouter >
 );

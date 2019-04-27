@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter,Link} from "react-router-dom";
 
 //创建一个类 ComponentHeader 相当于继承react里component的子类
 //export default 输出这个类
@@ -11,10 +12,11 @@ import React from 'react';
                 <div id="logo"><a href="/"/></div>
                 <h2 id="mnavh"><span className="navicon"/></h2>
                 <nav className="topnav" id="topnav">
-                    <a href="index.html">
-                        <span>首页</span>
-                        <span className="en">Protal</span>
-                    </a>
+                    <BrowserRouter>
+                    <Link to="/">
+                            <span>首页</span>
+                            <span className="en">Protal</span>
+                    </Link>
                     <a href="about.html">
                         <span>关于我</span>
                         <span className="en">About</span>
@@ -38,6 +40,7 @@ import React from 'react';
                         <span>留言版</span>
                         <span className="en">Gustbook</span>
                     </a>
+                    </BrowserRouter>
                 </nav>
             </header>
         );
