@@ -1,17 +1,15 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import {P_ARTICLE_LIST} from '../../api/api';
 
 import one from '../../images/01.jpg';
 import two from '../../images/02.jpg';
 import thee from '../../images/03.jpg'
 import fowe from '../../images/04.jpg'
-
 import fowe001 from '../../images/001.png'
 
 
 require('./index.css');
-
 
 class Home extends React.Component {
     constructor(props){
@@ -25,7 +23,7 @@ class Home extends React.Component {
 
     }
     async getList (){
-        let res = await window.http.post('/frontapi/article_list');
+        let res = await window.http.post(P_ARTICLE_LIST);
         let resdtae = res.data.data;
         this.setState({ datas: resdtae })
     }
