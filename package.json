@@ -5,6 +5,7 @@
   "dependencies": {
     "Promise": "^1.0.5",
     "axios": "^0.18.0",
+    "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-axios": "^2.0.3",
     "react-dom": "^16.8.6",

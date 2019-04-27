@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {P_ARTICLE_LIST} from '../../api/api';
+import {filterTime} from '../../utils/filter';
 
 import one from '../../images/01.jpg';
 import two from '../../images/02.jpg';
@@ -33,8 +34,8 @@ class Home extends React.Component {
     }
      async componentDidMount(){
          await this.getList()
-         await this.getWeateer()
-         console.log(this.state.wedter)
+         // await this.getWeateer()
+         console.log(this.state.datas)
     }
 
     render() {
@@ -76,9 +77,10 @@ class Home extends React.Component {
                                     <h3>{list.title}</h3>
                                     <figure><img alt="" src={fowe001}/></figure>
                                     <ul>
-                                        <Link target="_blank" className="readmore" to={`/detail/${list.title}`}>阅读全文>></Link>
+                                        <Link target="_blank" className="readmore" to={`/detail/${list.id}`}>阅读全文>></Link>
+                                        <p dangerouslySetInnerHTML = {{ __html:list.smalltext }}></p>
                                     </ul>
-                                    <p className="dateview"><span>{list.time}</span><span>作者：{list.author}</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
+                                    <p className="dateview"><span>{filterTime(list.newstime)}</span><span>作者：{list.author}</span><span>个人博客：[<a href="/news/life/">程序人生</a>]</span></p>
                                 </div>
                             )
                         })}
