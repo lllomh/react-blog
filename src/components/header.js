@@ -1,5 +1,9 @@
 import React from 'react';
-import {BrowserRouter,Link} from "react-router-dom";
+import { BrowserRouter, Route, Link,Switch } from 'react-router-dom';
+
+import NoMatch from "../view/404";
+import Home from '../view/home/index';
+import Detail from "../view/home/detail";
 
 //创建一个类 ComponentHeader 相当于继承react里component的子类
 //export default 输出这个类
@@ -8,11 +12,11 @@ import {BrowserRouter,Link} from "react-router-dom";
     //render() 解析类的一个输出
     render(){
         return (
+            <BrowserRouter>
             <header>
                 <div id="logo"><a href="/"/></div>
                 <h2 id="mnavh"><span className="navicon"/></h2>
                 <nav className="topnav" id="topnav">
-                    <BrowserRouter>
                     <Link to="/">
                             <span>首页</span>
                             <span className="en">Protal</span>
@@ -40,9 +44,14 @@ import {BrowserRouter,Link} from "react-router-dom";
                         <span>留言版</span>
                         <span className="en">Gustbook</span>
                     </a>
-                    </BrowserRouter>
                 </nav>
             </header>
+                <Switch>
+                    <Route exact path="/" component={Home}></Route>
+                    <Route exact path="/detail/:id" component={Detail}/>
+                    <Route component={NoMatch}/>
+                </Switch>
+            </BrowserRouter>
         );
     }
 }

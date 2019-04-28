@@ -11,7 +11,7 @@ require('./css/m.css');
 ReactDOM.render(
     <div className={'containers'}>
         <Header/>
-        <Router/>
+        {/*<Router/>*/}
         <Footer/>
     </div>,
     document.getElementById('root')
