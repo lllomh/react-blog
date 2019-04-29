@@ -28,14 +28,8 @@ class Home extends React.Component {
         let resdtae = res.data.data;
         this.setState({ datas: resdtae })
     }
-    async getWeateer(){
-        // let res =  await  http.post('/api/returnwadtherdata.php');
-        // this.setState({wedter:res.data.result['sk']})
-    }
      async componentDidMount(){
          await this.getList()
-         // await this.getWeateer()
-         console.log(this.state.datas)
     }
 
     render() {
@@ -87,8 +81,7 @@ class Home extends React.Component {
                     </div>
                     <aside className="right">
                         <div className="weather">
-                            <span>苏州</span><br/><br/>
-                            {/*<span>风向：{this.state.wedter['wind_direction']}</span>*/}
+                            <span>苏州</span><br/>
                         </div>
                         <div className="news">
                             <h3>
