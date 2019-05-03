@@ -18,18 +18,32 @@ class Home extends React.Component {
         this.state={
             timer:'1111',
             datas:[],
+            recommend:[],
             wedter:{}
-        }
+        };
         this.list= [];
 
     }
+
+    /**
+     * @获取列表
+     * @returns {Promise<void>}
+     */
     async getList (){
         let res = await window.http.post(P_ARTICLE_LIST);
         let resdtae = res.data.data;
         this.setState({ datas: resdtae })
     }
+    recommend(){
+        let arr =[];
+        for(let i = 0; i < 8;i++){
+            arr.push(this.state.datas[i])
+        }
+        this.setState({ recommend: arr })
+    }
      async componentDidMount(){
-         await this.getList()
+         await this.getList();
+         this.recommend()
     }
 
     render() {
@@ -88,14 +102,11 @@ class Home extends React.Component {
                                 <p>最新<span>文章</span></p>
                             </h3>
                             <ul className="rank">
-                                <li><a href="/" title="Column 三栏布局 个人网站模板" target="_blank">Column 三栏布局 个人网站模板</a></li>
-                                <li><a href="/" title="with love for you 个人网站模板" target="_blank">with love for you 个人网站模板</a></li>
-                                <li><a href="/" title="免费收录网站搜索引擎登录口大全" target="_blank">免费收录网站搜索引擎登录口大全</a></li>
-                                <li><a href="/" title="做网站到底需要什么?" target="_blank">做网站到底需要什么?</a></li>
-                                <li><a href="/" title="企业做网站具体流程步骤" target="_blank">企业做网站具体流程步骤</a></li>
-                                <li><a href="/" title="建站流程篇——教你如何快速学会做网站" target="_blank">建站流程篇——教你如何快速学会做网站</a></li>
-                                <li><a href="/" title="box-shadow 阴影右下脚折边效果" target="_blank">box-shadow 阴影右下脚折边效果</a></li>
-                                <li><a href="/" title="打雷时室内、户外应该需要注意什么" target="_blank">打雷时室内、户外应该需要注意什么</a></li>
+                                {this.state.datas.map((list,i) => {
+                                    return (
+                                        <li key={i}><Link to={`/detail/${list.id}`}>{list.title}</Link></li>
+                                    )
+                                })}
                             </ul>
                             <h3 className="ph">
                                 <p>点击<span>排行</span></p>
