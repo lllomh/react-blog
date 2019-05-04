@@ -102,7 +102,7 @@ class Home extends React.Component {
                                 <p>最新<span>文章</span></p>
                             </h3>
                             <ul className="rank">
-                                {this.state.datas.map((list,i) => {
+                                {this.state.recommend.map((list,i) => {
                                     return (
                                         <li key={i}><Link to={`/detail/${list.id}`}>{list.title}</Link></li>
                                     )
