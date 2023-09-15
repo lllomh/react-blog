@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "Promise": "^1.0.5",
-    "axios": "^0.18.0",
+    "axios": "^0.27.2",
     "moment": "^2.24.0",
     "react": "^16.8.6",
     "react-axios": "^2.0.3",
@@ -31,8 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+
   },
   "proxy": "http://www.api.com/index.php",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
