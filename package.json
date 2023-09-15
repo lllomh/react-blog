@@ -1,5 +1,5 @@
 {
-  "name": "testdemos",
+  "name": "@lllomh/react-blog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,5 +31,20 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0"
   },
-  "proxy": "http://www.api.com/index.php"
+  "proxy": "http://www.api.com/index.php",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lllomh/react-blog.git"
+  },
+  "keywords": [
+    "react-blog"
+  ],
+  "author": "lllomh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lllomh/react-blog/issues"
+  },
+  "homepage": "https://github.com/lllomh/react-blog#readme"
 }
