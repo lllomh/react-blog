@@ -1,7 +1,7 @@
 {
   "name": "@lllomh/react-blog",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "axios": "^0.27.2",
     "moment": "^2.24.0",
