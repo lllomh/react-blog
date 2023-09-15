@@ -12,6 +12,9 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
+  "publishConfig": {
+    "@lllomh:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
